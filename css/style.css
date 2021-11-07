@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+html{
+    font-size:100%;
+}
+
+
+body{
+    font-family: "Yu-Gothic Medium","游ゴシック Medium","YuGothic","游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper{
+    max-width: 1300px;
+    margin:0 auto;
+    padding: 0 4%; 
+    max-width: 1300px;
+}
+
+.left-nav{
+    list-style-type: none;
+}
+.right-nav{
+    list-style-type: none;
+    text-align: right;
+}
+
+.center-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.center-title h1{
+    color: #434242;
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+.center-title p{
+    color: #434242;
+    font-size: 1.0rem;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+.big-photo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    /* border-style: double dotted solid ridge; */
+}
+.big-photo img{
+    min-width: 1300px;
+}
+
+.heading{
+    text-align: center;
+}
+.heading h2{
+    color: chocolate;
+    font-size: 2rem;
+    padding-bottom: -20px;
+    margin-bottom: 0.5em;
+}
+
+.heading p{
+    color: chocolate;
+    padding-top: 0px;
+margin-top: 0px;
+}
+
+
+.contents{
+    padding-bottom: 2px;
+    background-color: #E1F6F7;
+    background-size: cover;    
+}
+.how-to-use{
+    position: center;
+    background-color: #EAF3C2;
+
+}
+
+
+.contents-grid{
+    display: grid;
+    gap:26px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contents-grid h3{
+    font-size: 1.5rem;
+}
+.contents-grid p{
+    line-height: 5px;
+}
+.use-grid{
+    display: grid;
+    gap:26px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0%;
+    margin-bottom: 50px;
+}
+.use-grid h3{
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+.use-grid p{
+    margin-left: 20px;
+    line-height: 5px;
+}
+
+.button{
+    text-align:center;
+    font-size:1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+/* ボタンにカーソル合わせた時の動作 */
+.button:hover{
+    background: #0090aa;
+}
+
