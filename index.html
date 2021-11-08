@@ -7,6 +7,8 @@
     <meta name="description" content="南知多町への旅をサポートします。">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="https://unpkg.com/vue@2.5.17"></script>
+
     <!-- CSS読み込み -->
     <link href="css/style.css" rel="stylesheet">
     <!-- フォントの読み込み -->
@@ -16,50 +18,191 @@
 
 <body>
 
-    <!-- ヘッダー -->
-    <div id="home" class="big-bg">
-        <header class="page-header wrapper">
-            <!-- 左ナビゲータ -->
-            <nav>
-                <ul class="left-nav">
+
+    <header>
+        <div class="header-body wrapper">
+            <nav class="left-nav">
+                <ul>
                     <li>サービスコンテンツ</li>
                     <li>サービスの使い方</li>
                     <li>サービスを使う</li>
                 </ul>
             </nav>
-            <!-- タイトル -->
             <div class="center-title">
                 <h1>そうだ、南知多行こう。</h1>
-                <p>南知多の旅をサポートします。</p>
+                <p>南知多町の旅をサポートします。</p>
             </div>
-
-            <!-- 右ナビゲータ -->
-            <nav>
-                <ul class="right-nav">
+            <nav class="right-nav">
+                <ul>
                     <li>ログイン</li>
                     <li>お問い合わせ</li>
                 </ul>
-
             </nav>
-        </header>
-        <!-- 大きい写真 -->
-        <div class="big-photo wrapper">
-            <img src="images/back.webp" alt="">
         </div>
+    </header>
 
-    </div>
 
-    <!-- コンテンツ -->
-    <div class="contents">
-        <div class="wrapper">
-            <!-- 見出し -->
+    <main>
+        <div class="main-photo">
+            <div class="photo-back wrapper">
+                <img src="images/back.webp" alt="">
+            </div>
+        </div>
+        <div class="contents-back">
+
             <div class="heading">
                 <h2>Contents</h2>
                 <p>サービス内容</p>
             </div>
 
-            <!-- 内容 -->
-            <div class="contents-grid">
+
+            <div class="contents-grid wrapper">
+                <div class="item">
+                    <h3>南知多町見どころ紹介</h3>
+                    <p>南知多町を代表する名所を</p>
+                    <p>写真付きで紹介。</p>
+                    <img src="images/miena.png" alt="">
+                </div>
+                <div class="item">
+                    <h3>旅の計画</h3>
+                    <p>旅の開始/終了予定時刻等、</p>
+                    <p>設定した条件から旅程を自動で作成します。</p>
+                    <img src="images/miena.png" alt="">
+                </div>
+                <div class="item">
+                    <h3>フォトラリー機能</h3>
+                    <p>フォトラリー機能を備えており、ゲーム感覚で</p>
+                    <p>南知多町を観光することができます。</p>
+                    <img src="images/miena.png" alt="">
+                </div>
+                <div class="item">
+                    <h3>旅の思い出</h3>
+                    <p>旅程を写真付きで保存、PDFへの出力が可能。</p>
+                    <p>SNSへ、"旅の思い出"として共有することができます。</p>
+                    <img src="images/miena.png" alt="">
+                </div>
+                <div class="item">
+                    <h3>口コミサイト機能</h3>
+                    <p>口コミ機能を備えており、あなたの旅の思い出を</p>
+                    <p>他ユーザーにお知らせすることができます。</p>
+                    <img src="images/miena.png" alt="">
+                </div>
+                <div class="item">
+                    <h3>ダウンロード機能</h3>
+                    <p>作成した旅程はPDFとしてダウンロード</p>
+                    <p>が可能。絵日記としても思い出に残せます。</p>
+                    <img src="images/miena.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="how-to-use-back">
+            <div class="heading">
+                <h2>How to USE</h2>
+                <p>サービスの使い方一例</p>
+            </div>
+            <div class="how-to-use-grid wrapper">
+                <div class="use-step">
+                    <h3>Step1</h3>
+                    <p>ああ</p>
+                    <img src="images/miena.png" alt="">
+                </div>
+                <div class="use-step">
+                    <h3>Step2</h3>
+                    <p>ああ</p>
+                    <p>ああ</p>
+                    <img src="images/miena.png" alt="">
+                </div>
+                <div class="use-step">
+                    <h3>Step3</h3>
+                    <p>ああ</p>
+                    <p>ああ</p>
+                    <img src="images/miena.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class=button-back>
+            <a class="button" href="index.html">サービスを使う</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="upper-footer">
+            <div class="wrapper">
+                <div>
+                    <div>snow</div>
+                    <div>mail</div>
+                </div>
+                <div class="footer-nav-box">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li>お問い合わせ</li>
+                            <li>作成者</li>
+                            <li>利用規約</li>
+                            <li>プライバシーポリシー</li>
+                            <li>サイトマップ</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-footer">
+            <div class="wrapper">copyright</div>
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- ヘッダー -->
+    <!-- <div id="home" class="big-bg">
+        <header class="page-header wrapper"> -->
+    <!-- 左ナビゲータ -->
+    <!-- <nav>
+                <ul class="left-nav">
+                    <li>サービスコンテンツ</li>
+                    <li>サービスの使い方</li>
+                    <li>サービスを使う</li>
+                </ul>
+            </nav> -->
+    <!-- タイトル -->
+    <!-- <div class="center-title">
+                <h1>そうだ、南知多行こう。</h1>
+                <p>南知多の旅をサポートします。</p>
+            </div> -->
+
+    <!-- 右ナビゲータ -->
+    <!-- <nav>
+                <ul class="right-nav">
+                    <li>ログイン</li>
+                    <li>お問い合わせ</li>
+                </ul>
+
+            </nav> -->
+    <!-- </header> -->
+    <!-- 大きい写真 -->
+    <!-- <div class="big-photo wrapper">
+            <img src="images/back.webp" alt="">
+        </div> -->
+
+    <!-- </div> -->
+
+    <!-- コンテンツ -->
+    <!-- <div class="contents">
+        <div class="wrapper"> -->
+    <!-- 見出し -->
+    <!-- <div class="heading">
+                <h2>Contents</h2>
+                <p>サービス内容</p>
+            </div> -->
+
+    <!-- 内容 -->
+    <!-- <div class="contents-grid">
                 <div class="item">
                     <h3>南知多町見どころ紹介</h3>
                     <p>南知多町を代表する名所を</p>
@@ -100,19 +243,19 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- 使い方 -->
-    <div class="how-to-use">
-        <div class="wrapper">
-            <!-- 見出し -->
-            <div class="heading">
+    <!-- <div class="how-to-use">
+        <div class="wrapper"> -->
+    <!-- 見出し -->
+    <!-- <div class="heading">
                 <h2>How to USE</h2>
                 <p>使い方一例</p>
-            </div>
+            </div> -->
 
-            <!-- 内容 -->
+    <!-- 内容 -->
 
-            <div class="use-grid">
+    <!-- <div class="use-grid">
                 <div class="item">
                     <h3>Step1</h3>
                     <p>条件を設定して旅程を作成する。</p>
@@ -132,35 +275,31 @@
                 </div>
 
             </div>
-        
+
             <a class="button" href="index.html">サービスを使う</a>
 
         </div>
-    </div>
+    </div> -->
 
-
+    <!-- 
     <footer>
-        <div>
+        <div class="upfoot wrapper">
             <h2>SNOW</h2>
-            <div>
-                <ul>
-                    <li>お問い合わせ</li>
-                    <li>作成者</li>
-                    <li>利用規約</li>
-                    <li>プライバシーポリシー</li>
-                    <li>サイトマップ</li>
-                </ul>
+            <div class="upfoot-grid">
+                <div class>お問い合わせ</div>
+                <div>作成者</div>
+                <div>利用規約</div>
+                <div>プライバシーポリシー</div>
+                <div>サイトマップ</div>
             </div>
-        </div>
+        </div> -->
+    <!-- 
 
-
-        <div>
+        <div class="downfoot wrapper">
             <p><small>Copyright(C) SNOW, All Rights Reserved.</small></p>
-
         </div>
 
-
-    </footer>
+    </footer> -->
 
 </body>
 
